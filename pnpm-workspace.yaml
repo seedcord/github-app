@@ -1,0 +1,47 @@
+catalog:
+  vite: npm:@voidzero-dev/vite-plus-core@1.2.0
+  vite-plus: 1.2.0
+overrides:
+  vite@*: "catalog:"
+peerDependencyRules:
+  allowAny:
+    - vite
+  allowedVersions:
+    vite: "*"
+skills:
+  dirs:
+    - .agent/skills
+    - .claude/skills
+allowBuilds:
+  esbuild: false
+  workerd: false
+  better-sqlite3: true
+  sharp: false
+minimumReleaseAgeExclude:
+  - "@voidzero-dev/vite-plus-core@1.2.0"
+  - "@voidzero-dev/vite-plus-darwin-arm64@1.2.0"
+  - "@voidzero-dev/vite-plus-darwin-x64@1.2.0"
+  - "@voidzero-dev/vite-plus-linux-arm64-gnu@1.2.0"
+  - "@voidzero-dev/vite-plus-linux-arm64-musl@1.2.0"
+  - "@voidzero-dev/vite-plus-linux-x64-gnu@1.2.0"
+  - "@voidzero-dev/vite-plus-linux-x64-musl@1.2.0"
+  - "@voidzero-dev/vite-plus-win32-arm64-msvc@1.2.0"
+  - "@voidzero-dev/vite-plus-win32-x64-msvc@1.2.0"
+  - miniflare@5.20261012.0-beta
+  - vite-plus@1.2.0
+  - void@1.1.0
+  - wrangler@4.151.0
+  - "@cloudflare/build-output-utils@0.9.2"
+  - "@cloudflare/codemods@0.5.0"
+  - "@cloudflare/config@0.26.0"
+  - "@cloudflare/runtime-types@0.1.11"
+  - "@cloudflare/vite-plugin@1.64.0"
+  - "@void/deploy-cloudflare@1.1.0"
+  - "@void/deploy-core@1.1.0"
+  - "@void/edge@1.1.0"
+  - "@void/isr@1.1.0"
+  - "@void/platform@1.1.0"
+  - cf@1.0.0-beta.17
+permissions:
+  void:
+    skills: true

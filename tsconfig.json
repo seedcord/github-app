@@ -1,0 +1,7 @@
+{
+  "extends": "./.void/tsconfig.json",
+  "files": ["./.void/routes.d.ts"],
+  "compilerOptions": {
+    "types": ["void/env"]
+  }
+}
